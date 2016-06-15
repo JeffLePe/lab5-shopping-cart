@@ -3,6 +3,7 @@ var controller = {
     init: function() {
         controller.getForm();
         controller.displayProducts();
+        controller.displayTotal();
     },
     
     getForm: function() {
@@ -35,8 +36,13 @@ var controller = {
         var prices = list.getListPrices();
         products.forEach(view.displayList);
         prices.forEach(view.displayListPrice);
+    },
+    
+    displayTotal: function(){
+        var total = list.calcTotal();
+        view.displayTotal(total);
     }
     
-}
+};
 
 controller.init();

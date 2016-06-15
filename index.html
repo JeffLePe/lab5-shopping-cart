@@ -2,10 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css"/>
         <title>Prova</title>
         <body>
-            <div>
-                <div>
+            <div id="div-principal">
+                <div id="div-form">
                     <h1>Product</h1>
                     <fieldset>
                         <form method="" id="form-product">
@@ -13,16 +14,16 @@
                             <input type="text" required id="name"/>
                             <label>Price</label>
                             <input type="text" required id="price"/>
-                            <input type="submit" value="Add"/>
+                            <input type="submit" value="Add" id="bt-add"/>
                         </form>
                     </fieldset>
                 </div>
-                <div>
+                <div id="div-list">
                     <h1>Shopping Cart</h1>
-                    <div>
+                    <div id="div-list-left">
                         <ul id="list-name"></ul>
                     </div>
-                    <div>
+                    <div id="div-list-right">
                         <ul id="list-price"></ul>
                     </div>
                     <p>Total</p>

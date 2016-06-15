@@ -45,6 +45,14 @@ var list = {
     savePrice: function() {
         var pricesJsonText = JSON.stringify(list.prices);
         window.localStorage.setItem('list-prices', pricesJsonText);
+    },
+    
+    calcTotal: function() {
+        var total = 0;
+        for(var i=0; i < list.prices.length(); i++){
+            total = total + prices[i];
+        }
+        return total;
     }
     
-}
+};
